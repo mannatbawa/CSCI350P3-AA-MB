@@ -12,6 +12,14 @@ struct {
   struct proc proc[NPROC];
 } ptable;
 
+struct proc* q0[NPROC]; 
+struct proc* q1[NPROC]; 
+struct proc* q2[NPROC];
+
+int c0=-1;
+int c1=-1;
+int c2=-1;
+
 static struct proc *initproc;
 
 int nextpid = 1;
@@ -86,8 +94,60 @@ allocproc(void)
   return 0;
 
 found:
+  // we need to check our queues and if there is a unused etc. remove that process
+  if (p->pid > 0){
+    for (int i=0; i < c0; i++){
+      if (p == q0[i]){
+        //delete q0[i]
+        //shift all left
+        for (int j = i; j< c0 - 1; j++){
+          q0[j] = q0[j+1]; 
+        }
+        c0--;
+        break;
+      }
+    }
+    //do the same for q1 and q2
+    for (int i=0; i < c1; i++){
+      if (p == q1[i]){
+        //delete q1[i]
+        //shift all left
+        for (int j = i; j< c1 - 1; j++){
+          q1[j] = q1[j+1]; 
+        }
+        c1--;
+        break;
+      }
+    }
+    for (int i=0; i < c2; i++){
+      if (p == q2[i]){
+        //delete q2[i]
+        //shift all left
+        for (int j = i; j< c2 - 1; j++){
+          q2[j] = q2[j+1]; 
+        }
+        c2--;
+        break;
+      }
+    }
+  }
+
   p->state = EMBRYO;
   p->pid = nextpid++;
+
+  //After searching all and shifting:
+  //Initiate proc properties:
+  //Priority, total_ticks etc —> whatever is necessary
+  p->wait_time = 0;
+  p->num_ticks = 0;
+  p->total_ticks = 0;
+  for (int i = 0; i<3; i++){
+    p->times[i] = 0;
+    p->ticks[i] = 0;
+  }
+  p->priority = 0;
+  q0[c0] = p;
+  c0++;
 
   release(&ptable.lock);
 
@@ -332,26 +392,123 @@ scheduler(void)
 
     // Loop over process table looking for process to run.
     acquire(&ptable.lock);
-    for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
-      if(p->state != RUNNABLE)
-        continue;
 
-      // Switch to chosen process.  It is the process's job
-      // to release ptable.lock and then reacquire it
-      // before jumping back to us.
+    p = 0;
+
+    // for(p = ptable.proc; p < &ptable.proc[NPROC]; p++){
+    //   if(p->state != RUNNABLE)
+    //     continue;
+
+    //If q0 is not empty:
+    //Loop to find RUNNABLE process in the q0 array
+    for (int i = 0; i < c0; i++){
+      //if q0[i] —>state != RUNNABLE
+      //Continue 
+      if (q0[i] -> state != RUNNABLE){
+        continue;
+      }
+      //first found runnable
+      p = q0[i];
+      break;
+    }
+    for (int i = 0; i < c1; i++){
+      if (q1[i] -> state != RUNNABLE){
+        continue;
+      }
+      p = q1[i];
+      break;
+    }
+    for (int i = 0; i < c2; i++){
+      if (q2[i] -> state != RUNNABLE){
+        continue;
+      }
+      p = q2[i];
+      break;
+    }
+
+    // Switch to chosen process.  It is the process's job
+    // to release ptable.lock and then reacquire it
+    // before jumping back to us.
+    if (p){
       c->proc = p;
       switchuvm(p);
       p->state = RUNNING;
 
+      //WRITE STATS —> start_tick and priority
+      //start_tick = ticks
+      acquire(&tickslock);
+      int start_tick = ticks;
+      release(&tickslock);
+
+      //come back to original part
       swtch(&(c->scheduler), p->context);
       switchkvm();
+      c->proc = 0;
 
+      //Duration = ticks - start
+      // p->num_stats_used++;
+      // p->times[0]++;
+      // p->ticks[0] = duration;
+      // Change total_ticks in proc if you have 
+      acquire(&tickslock);
+      int duration = ticks - start_tick;
+      release(&tickslock);
+
+      int priority = p -> priority;
+
+      // p->num_stats_used++;
+      p->times[priority]++;
+      p->ticks[priority] = duration;
+      //Change total_ticks if you have 
+      p->total_ticks += duration;
       // Process is done running for now.
       // It should have changed its p->state before coming back.
-      c->proc = 0;
+
+      // round robin part
+      //  Key Idea: Every ready task gets a turn on the CPU.
+      //  Time quantum: Maximum CPU time per turn.
+      // Finishes or blocks early: CPU goes to the next ready task.
+      // Quantum expires: Task is preempted and moved to the end of the ready queue.
+      if (p->state == RUNNABLE){
+        if (p->priority == 0){
+          for (int i = 0; i < c0; i++){
+            if (q0[i] == p){
+              //shift
+              for (int j = i; j < c0 - 1; j++){
+                q0[j] = q0[j+1];
+              }
+              q0[c0-1] = p;
+              break;
+            }
+          }
+        }
+        else if (p->priority == 1){
+          for (int i = 0; i < c1 && p == 0; i++){
+            if (q1[i] == p){
+              //shift
+              for (int j = i; j < c1 - 1; j++){
+                q1[j] = q1[j+1];
+              }
+              q1[c1-1] = p;
+              break;
+            }
+          }
+        }
+        else{
+          for (int i = 0; i < c2 && p == 0; i++){
+            if (q2[i] == p){
+              //shift
+              for (int j = i; j < c2 - 1; j++){
+                q2[j] = q2[j+1];
+              }
+              q2[c2-1] = p;
+              break;
+            }
+          }
+        }
+      }
     }
     release(&ptable.lock);
-
   }
 }
 

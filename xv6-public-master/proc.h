@@ -49,7 +49,23 @@ struct proc {
   struct file *ofile[NOFILE];  // Open files
   struct inode *cwd;           // Current directory
   char name[16];               // Process name (debugging)
+
+  int times[3]; // number of times each process was scheduled at each of 3 priority queue
+  int ticks[3]; // number of ticks each process used
+  uint wait_time; // number of ticks each RUNNABLE process waited
+  int num_ticks; // number of timer ticks the process has run for
+  int total_ticks; // total number of timer ticks the process has run for 
+  // struct sched_stat_t sched_stats[NSCHEDSTATS]; // schedule stats for each tick
+  int num_stats_used; // count to the end of the array 
+  int priority;
 };
+
+extern struct proc* q0[NPROC];
+extern struct proc* q1[NPROC];
+extern struct proc* q2[NPROC];
+extern int c0;
+extern int c1;
+extern int c2;
 
 // Process memory is laid out contiguously, low addresses first:
 //   text
