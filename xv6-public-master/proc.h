@@ -1,3 +1,5 @@
+#include "pstat.h"
+
 // Per-CPU state
 struct cpu {
   uchar apicid;                // Local APIC ID
@@ -55,7 +57,7 @@ struct proc {
   uint wait_time; // number of ticks each RUNNABLE process waited
   int num_ticks; // number of timer ticks the process has run for
   int total_ticks; // total number of timer ticks the process has run for 
-  // struct sched_stat_t sched_stats[NSCHEDSTATS]; // schedule stats for each tick
+  struct sched_stat_t sched_stats[NSCHEDSTATS]; // schedule stats for each tick
   int num_stats_used; // count to the end of the array 
   int priority;
 };

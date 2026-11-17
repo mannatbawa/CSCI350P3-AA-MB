@@ -16,9 +16,9 @@ struct proc* q0[NPROC];
 struct proc* q1[NPROC]; 
 struct proc* q2[NPROC];
 
-int c0=-1;
-int c1=-1;
-int c2=-1;
+int c0=0;
+int c1=0;
+int c2=0;
 
 static struct proc *initproc;
 
@@ -146,6 +146,7 @@ found:
     p->ticks[i] = 0;
   }
   p->priority = 0;
+  p->num_stats_used = 0;
   q0[c0] = p;
   c0++;
 
@@ -456,6 +457,13 @@ scheduler(void)
 
       int priority = p -> priority;
 
+      if (p->num_stats_used < NSCHEDSTATS) {
+        p->sched_stats[p->num_stats_used].start_tick = start_tick;
+        p->sched_stats[p->num_stats_used].duration = duration;
+        p->sched_stats[p->num_stats_used].priority = priority;
+        p->num_stats_used++;
+      }
+
       // p->num_stats_used++;
       p->times[priority]++;
       p->ticks[priority] = duration;
@@ -653,6 +661,32 @@ kill(int pid)
   return -1;
 }
 
+int getpinfo (int pid) {
+  struct proc *p;
+  acquire(&ptable.lock);
+  for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
+    if (p->pid = pid) {
+      cprintf("**********************\n");
+      cprintf("name= %s, pid= %d\n", p->name, p->pid);
+      cprintf("wait time= %d\n", p->wait_time);
+      cprintf("ticks = {%d, %d, %d}\n", p->ticks[0], p->ticks[1], p->ticks[2]);
+      cprintf("times= {%d, %d, %d}\n", p->times[0], p->times[1], p->times[2]);
+      cprintf("times = {%d, %d, %d}\n", p->times[0], p->times[1], p->times[2]);
+      cprintf("*******************\n")
+      for (int i = 0; i < p->num_stats_used; i++) {
+        cprintf("start=%d, duration=%d, priority=%d\n",
+          p->sched_stats[i].start_tick,
+          p->sched_stats[i].duration,
+          p->sched_stats[i].priority
+        );
+      }
+      release(&ptable.lock);
+      return 0;
+    }
+  }
+  release(&ptable.lock);
+  return -1;
+}
 //PAGEBREAK: 36
 // Print a process listing to console.  For debugging.
 // Runs when user types ^P on console.
