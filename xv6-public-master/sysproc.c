@@ -90,6 +90,7 @@ sys_uptime(void)
   return xticks;
 }
 
+int
 sys_getpinfo(void)
 {
   int pid;

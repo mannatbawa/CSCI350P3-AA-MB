@@ -372,6 +372,52 @@ wait(void)
   }
 }
 
+static void
+queue_remove(struct proc *p){
+  struct proc **q;
+  int *c;
+  if (p->priority == 0){
+    q = q0;
+    c = &c0;
+  }
+  else if (p->priority == 1){
+    q = q1;
+    c = &c1;
+  }
+  else{
+    q = q2;
+    c = &c2;
+  }
+
+  for (int i = 0; i < *c; i++){
+    if (q[i] == p){
+      for (int j = i; j < *c - 1; j++){
+        q[j] = q[j+1];
+      }
+      (*c)--;
+      return;
+    }
+  }
+}
+
+static void
+queue_append(struct proc *p, int level){
+  p->priority = level;
+  if (level == 0){
+    q0[c0] = p;
+    c0++;
+  }  
+  else if (level == 1){
+    q1[c1] = p;
+    c1++;
+  }
+  else{
+    q2[c2] = p;
+    c2++;
+  }
+
+}
+
 //PAGEBREAK: 42
 // Per-CPU process scheduler.
 // Each CPU calls scheduler() after setting itself up.
@@ -412,14 +458,14 @@ scheduler(void)
       p = q0[i];
       break;
     }
-    for (int i = 0; i < c1; i++){
+    for (int i = 0; i < c1 && !p; i++){
       if (q1[i] -> state != RUNNABLE){
         continue;
       }
       p = q1[i];
       break;
     }
-    for (int i = 0; i < c2; i++){
+    for (int i = 0; i < c2 && !p; i++){
       if (q2[i] -> state != RUNNABLE){
         continue;
       }
@@ -478,42 +524,27 @@ scheduler(void)
       // Finishes or blocks early: CPU goes to the next ready task.
       // Quantum expires: Task is preempted and moved to the end of the ready queue.
       if (p->state == RUNNABLE){
-        if (p->priority == 0){
-          for (int i = 0; i < c0; i++){
-            if (q0[i] == p){
-              //shift
-              for (int j = i; j < c0 - 1; j++){
-                q0[j] = q0[j+1];
-              }
-              q0[c0-1] = p;
-              break;
-            }
-          }
+        int tick_limit;
+        if (priority == 0){
+          tick_limit = 1;
         }
-        else if (p->priority == 1){
-          for (int i = 0; i < c1 && p == 0; i++){
-            if (q1[i] == p){
-              //shift
-              for (int j = i; j < c1 - 1; j++){
-                q1[j] = q1[j+1];
-              }
-              q1[c1-1] = p;
-              break;
-            }
-          }
+        else if (priority == 1){
+          tick_limit = 2;
         }
         else{
-          for (int i = 0; i < c2 && p == 0; i++){
-            if (q2[i] == p){
-              //shift
-              for (int j = i; j < c2 - 1; j++){
-                q2[j] = q2[j+1];
-              }
-              q2[c2-1] = p;
-              break;
-            }
-          }
+          tick_limit = 8;
         }
+        if (p->num_ticks>=tick_limit){
+          int next;
+          if (priority < 2)
+            next = priority + 1;
+          else 
+            next = 2;
+          queue_remove(p);
+          queue_append(p, next);
+          p->num_ticks = 0;
+        }
+
       }
     }
     release(&ptable.lock);
@@ -665,14 +696,13 @@ int getpinfo (int pid) {
   struct proc *p;
   acquire(&ptable.lock);
   for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
-    if (p->pid = pid) {
+    if (p->pid == pid) {
       cprintf("**********************\n");
       cprintf("name= %s, pid= %d\n", p->name, p->pid);
       cprintf("wait time= %d\n", p->wait_time);
-      cprintf("ticks = {%d, %d, %d}\n", p->ticks[0], p->ticks[1], p->ticks[2]);
+      cprintf("ticks= {%d, %d, %d}\n", p->ticks[0], p->ticks[1], p->ticks[2]);
       cprintf("times= {%d, %d, %d}\n", p->times[0], p->times[1], p->times[2]);
-      cprintf("times = {%d, %d, %d}\n", p->times[0], p->times[1], p->times[2]);
-      cprintf("*******************\n")
+      cprintf("*******************\n");
       for (int i = 0; i < p->num_stats_used; i++) {
         cprintf("start=%d, duration=%d, priority=%d\n",
           p->sched_stats[i].start_tick,
