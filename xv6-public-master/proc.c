@@ -418,6 +418,31 @@ queue_append(struct proc *p, int level){
 
 }
 
+// Increase wait time of all RUNNABLE processes in
+// q2 according to last process' duration If any of
+// the process' wait time passes 50 boost it into
+// the end of first priority queue
+
+static void
+boost(struct proc *ran, int duration){
+  for (int i = 0; i < c2; i++){
+    struct proc *q = q2[i];
+    if (q != ran && q->state != RUNNABLE){
+      q->wait_time += duration;
+      if (q -> wait_time >= 50){
+        queue_remove(q);
+        queue_append(q,0);
+        q->wait_time = 0;
+        q->num_ticks = 0;
+        i--;
+      }
+    }
+  }
+}
+// p = p_to_boost Change priority
+// of p c0++; q0[c0] = p Delete
+// from q2 and shift left
+
 //PAGEBREAK: 42
 // Per-CPU process scheduler.
 // Each CPU calls scheduler() after setting itself up.
@@ -480,6 +505,7 @@ scheduler(void)
       c->proc = p;
       switchuvm(p);
       p->state = RUNNING;
+      p->wait_time = 0;
 
       //WRITE STATS —> start_tick and priority
       //start_tick = ticks
@@ -546,6 +572,7 @@ scheduler(void)
         }
 
       }
+      boost(p, duration);
     }
     release(&ptable.lock);
   }
@@ -656,8 +683,14 @@ wakeup1(void *chan)
   struct proc *p;
 
   for(p = ptable.proc; p < &ptable.proc[NPROC]; p++)
-    if(p->state == SLEEPING && p->chan == chan)
+    if(p->state == SLEEPING && p->chan == chan){
       p->state = RUNNABLE;
+      queue_remove(p);
+      queue_append(p, p->priority);
+      p->num_ticks = 0;
+      p->wait_time = 0;
+    }
+
 }
 
 // Wake up all processes sleeping on chan.
@@ -695,14 +728,29 @@ kill(int pid)
 int getpinfo (int pid) {
   struct proc *p;
   acquire(&ptable.lock);
+  // Get lock Get current process With for loop
+  // through all processes in ptable
+  // find pid
+
   for (p = ptable.proc; p < &ptable.proc[NPROC]; p++) {
     if (p->pid == pid) {
+      // Cprintf ————— proc->name
+      // proc->wait_time
+      // proc->ticks[0],ticks[1],ticks[2]
+      // proc->times[0],times[1],times[2]
+      // ————— // for each stat For each
+      //added for graph script
+      cprintf("PSTAT_START\n");
       cprintf("**********************\n");
-      cprintf("name= %s, pid= %d\n", p->name, p->pid);
-      cprintf("wait time= %d\n", p->wait_time);
-      cprintf("ticks= {%d, %d, %d}\n", p->ticks[0], p->ticks[1], p->ticks[2]);
-      cprintf("times= {%d, %d, %d}\n", p->times[0], p->times[1], p->times[2]);
+      cprintf("name = %s, pid = %d\n", p->name, p->pid);
+      cprintf("wait time = %d\n", p->wait_time);
+      cprintf("ticks = {%d, %d, %d}\n", p->ticks[0], p->ticks[1], p->ticks[2]);
+      cprintf("times = {%d, %d, %d}\n", p->times[0], p->times[1], p->times[2]);
       cprintf("*******************\n");
+      // stat until num_of_stats
+      // Get/cprintf start_tick, duration and priority from each valid item in sched_stats
+      // Release lock
+      // Return 0
       for (int i = 0; i < p->num_stats_used; i++) {
         cprintf("start=%d, duration=%d, priority=%d\n",
           p->sched_stats[i].start_tick,
@@ -710,6 +758,9 @@ int getpinfo (int pid) {
           p->sched_stats[i].priority
         );
       }
+      cprintf("PSTAT_END\n");
+      // If not found
+      // Release break
       release(&ptable.lock);
       return 0;
     }

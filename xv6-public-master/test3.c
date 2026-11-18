@@ -5,17 +5,19 @@
 #define ROUNDS 60
 
 int main (void) {
-    printf(1, "test 3: gaming the scheduler (should stay at priority 0) \n");
-
-    for (int k = 0; k < ROUNDS; k++) {
-        volatile int x = 0;
-        for (int j = 0; j <1000; j++) {
-            x = x + j;
-        
+    int pid = fork();
+    if (pid == 0){
+        for (int k = 0; k < ROUNDS; k++) {
+            volatile int x = 0;
+            for (int j = 0; j <1000; j++) {
+                x = x + j;
+            }
+            sleep(1);
         }
-        sleep(1);
+        getpinfo(getpid());
+        exit();
     }
-
-    getpinfo(getpid());
+    wait();
+    printf(1, "test3: done\n");
     exit();
 }
