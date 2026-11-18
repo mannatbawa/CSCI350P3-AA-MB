@@ -427,7 +427,7 @@ static void
 boost(struct proc *ran, int duration){
   for (int i = 0; i < c2; i++){
     struct proc *q = q2[i];
-    if (q != ran && q->state != RUNNABLE){
+    if (q != ran && q->state == RUNNABLE){
       q->wait_time += duration;
       if (q -> wait_time >= 50){
         queue_remove(q);

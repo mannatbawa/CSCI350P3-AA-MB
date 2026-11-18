@@ -1,0 +1,70 @@
+$ test3
+PSTAT_START
+**********************
+name = test3, pid = 22
+wait time = 0
+ticks = {0, 0, 0}
+times = {60, 0, 0}
+*******************
+start=14461, duration=0, priority=0
+start=14462, duration=0, priority=0
+start=14463, duration=0, priority=0
+start=14464, duration=0, priority=0
+start=14465, duration=0, priority=0
+start=14466, duration=0, priority=0
+start=14467, duration=0, priority=0
+start=14468, duration=0, priority=0
+start=14469, duration=0, priority=0
+start=14470, duration=0, priority=0
+start=14471, duration=0, priority=0
+start=14472, duration=0, priority=0
+start=14473, duration=0, priority=0
+start=14474, duration=0, priority=0
+start=14475, duration=0, priority=0
+start=14476, duration=0, priority=0
+start=14477, duration=0, priority=0
+start=14478, duration=0, priority=0
+start=14479, duration=0, priority=0
+start=14480, duration=0, priority=0
+start=14481, duration=0, priority=0
+start=14482, duration=0, priority=0
+start=14483, duration=0, priority=0
+start=14484, duration=0, priority=0
+start=14485, duration=0, priority=0
+start=14486, duration=0, priority=0
+start=14487, duration=0, priority=0
+start=14488, duration=0, priority=0
+start=14489, duration=0, priority=0
+start=14490, duration=0, priority=0
+start=14491, duration=0, priority=0
+start=14492, duration=0, priority=0
+start=14493, duration=0, priority=0
+start=14494, duration=0, priority=0
+start=14495, duration=0, priority=0
+start=14496, duration=0, priority=0
+start=14497, duration=0, priority=0
+start=14498, duration=0, priority=0
+start=14499, duration=0, priority=0
+start=14500, duration=0, priority=0
+start=14501, duration=0, priority=0
+start=14502, duration=0, priority=0
+start=14503, duration=0, priority=0
+start=14504, duration=0, priority=0
+start=14505, duration=0, priority=0
+start=14506, duration=0, priority=0
+start=14507, duration=0, priority=0
+start=14508, duration=0, priority=0
+start=14509, duration=0, priority=0
+start=14510, duration=0, priority=0
+start=14511, duration=0, priority=0
+start=14512, duration=0, priority=0
+start=14513, duration=0, priority=0
+start=14514, duration=0, priority=0
+start=14515, duration=0, priority=0
+start=14516, duration=0, priority=0
+start=14517, duration=0, priority=0
+start=14518, duration=0, priority=0
+start=14519, duration=0, priority=0
+start=14520, duration=0, priority=0
+PSTAT_END
+test3: done

@@ -1,0 +1,1257 @@
+$ test2
+PSTAT_START
+**********************
+name = test2, pid = 7
+wait time = 0
+ticks = {1, 2, 8}
+times = {30, 29, 6}
+*******************
+start=425, duration=1, priority=0
+start=433, duration=2, priority=1
+start=484, duration=8, priority=2
+start=538, duration=8, priority=2
+start=593, duration=8, priority=2
+start=646, duration=8, priority=2
+start=704, duration=1, priority=0
+start=705, duration=2, priority=1
+start=758, duration=1, priority=0
+start=763, duration=2, priority=1
+start=816, duration=1, priority=0
+start=822, duration=2, priority=1
+start=874, duration=1, priority=0
+start=881, duration=2, priority=1
+start=934, duration=1, priority=0
+start=939, duration=2, priority=1
+start=992, duration=1, priority=0
+start=997, duration=2, priority=1
+start=1050, duration=1, priority=0
+start=1054, duration=2, priority=1
+start=1106, duration=1, priority=0
+start=1112, duration=2, priority=1
+start=1164, duration=1, priority=0
+start=1170, duration=2, priority=1
+start=1222, duration=1, priority=0
+start=1229, duration=2, priority=1
+start=1282, duration=1, priority=0
+start=1287, duration=2, priority=1
+start=1340, duration=1, priority=0
+start=1345, duration=2, priority=1
+start=1398, duration=1, priority=0
+start=1402, duration=2, priority=1
+start=1456, duration=1, priority=0
+start=1460, duration=2, priority=1
+start=1516, duration=1, priority=0
+start=1518, duration=2, priority=1
+start=1569, duration=8, priority=2
+start=1622, duration=8, priority=2
+start=1683, duration=1, priority=0
+start=1684, duration=2, priority=1
+start=1737, duration=1, priority=0
+start=1742, duration=2, priority=1
+start=1795, duration=1, priority=0
+start=1801, duration=2, priority=1
+start=1853, duration=1, priority=0
+start=1860, duration=2, priority=1
+start=1913, duration=1, priority=0
+start=1918, duration=2, priority=1
+start=1971, duration=1, priority=0
+start=1976, duration=2, priority=1
+start=2029, duration=1, priority=0
+start=2033, duration=2, priority=1
+start=2085, duration=1, priority=0
+start=2091, duration=2, priority=1
+start=2143, duration=1, priority=0
+start=2149, duration=2, priority=1
+start=2201, duration=1, priority=0
+start=2208, duration=2, priority=1
+start=2261, duration=1, priority=0
+start=2266, duration=2, priority=1
+start=2319, duration=1, priority=0
+start=2324, duration=2, priority=1
+start=2377, duration=1, priority=0
+start=2381, duration=2, priority=1
+start=2435, duration=1, priority=0
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 4
+wait time = 0
+ticks = {1, 2, 8}
+times = {31, 31, 5}
+*******************
+start=422, duration=1, priority=0
+start=427, duration=2, priority=1
+start=460, duration=8, priority=2
+start=519, duration=1, priority=0
+start=520, duration=2, priority=1
+start=573, duration=1, priority=0
+start=581, duration=2, priority=1
+start=633, duration=1, priority=0
+start=639, duration=2, priority=1
+start=691, duration=1, priority=0
+start=698, duration=2, priority=1
+start=751, duration=1, priority=0
+start=756, duration=2, priority=1
+start=809, duration=1, priority=0
+start=814, duration=2, priority=1
+start=867, duration=1, priority=0
+start=871, duration=2, priority=1
+start=923, duration=1, priority=0
+start=929, duration=2, priority=1
+start=981, duration=1, priority=0
+start=987, duration=2, priority=1
+start=1039, duration=1, priority=0
+start=1046, duration=2, priority=1
+start=1099, duration=1, priority=0
+start=1104, duration=2, priority=1
+start=1157, duration=1, priority=0
+start=1162, duration=2, priority=1
+start=1215, duration=1, priority=0
+start=1219, duration=2, priority=1
+start=1273, duration=1, priority=0
+start=1277, duration=2, priority=1
+start=1333, duration=1, priority=0
+start=1335, duration=2, priority=1
+start=1386, duration=8, priority=2
+start=1439, duration=8, priority=2
+start=1497, duration=1, priority=0
+start=1498, duration=2, priority=1
+start=1551, duration=1, priority=0
+start=1556, duration=2, priority=1
+start=1609, duration=1, priority=0
+start=1615, duration=2, priority=1
+start=1670, duration=1, priority=0
+start=1677, duration=2, priority=1
+start=1730, duration=1, priority=0
+start=1735, duration=2, priority=1
+start=1788, duration=1, priority=0
+start=1793, duration=2, priority=1
+start=1846, duration=1, priority=0
+start=1850, duration=2, priority=1
+start=1902, duration=1, priority=0
+start=1908, duration=2, priority=1
+start=1960, duration=1, priority=0
+start=1966, duration=2, priority=1
+start=2018, duration=1, priority=0
+start=2025, duration=2, priority=1
+start=2078, duration=1, priority=0
+start=2083, duration=2, priority=1
+start=2136, duration=1, priority=0
+start=2141, duration=2, priority=1
+start=2194, duration=1, priority=0
+start=2198, duration=2, priority=1
+start=2252, duration=1, priority=0
+start=2256, duration=2, priority=1
+start=2312, duration=1, priority=0
+start=2314, duration=2, priority=1
+start=2365, duration=8, priority=2
+start=2418, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 5
+wait time = 0
+ticks = {1, 2, 8}
+times = {31, 31, 5}
+*******************
+start=423, duration=1, priority=0
+start=429, duration=2, priority=1
+start=468, duration=8, priority=2
+start=522, duration=8, priority=2
+start=580, duration=1, priority=0
+start=583, duration=2, priority=1
+start=636, duration=1, priority=0
+start=641, duration=2, priority=1
+start=694, duration=1, priority=0
+start=700, duration=2, priority=1
+start=752, duration=1, priority=0
+start=759, duration=2, priority=1
+start=812, duration=1, priority=0
+start=817, duration=2, priority=1
+start=870, duration=1, priority=0
+start=875, duration=2, priority=1
+start=928, duration=1, priority=0
+start=932, duration=2, priority=1
+start=984, duration=1, priority=0
+start=990, duration=2, priority=1
+start=1042, duration=1, priority=0
+start=1048, duration=2, priority=1
+start=1100, duration=1, priority=0
+start=1107, duration=2, priority=1
+start=1160, duration=1, priority=0
+start=1165, duration=2, priority=1
+start=1218, duration=1, priority=0
+start=1223, duration=2, priority=1
+start=1276, duration=1, priority=0
+start=1280, duration=2, priority=1
+start=1334, duration=1, priority=0
+start=1338, duration=2, priority=1
+start=1394, duration=1, priority=0
+start=1396, duration=2, priority=1
+start=1447, duration=8, priority=2
+start=1500, duration=8, priority=2
+start=1558, duration=1, priority=0
+start=1559, duration=2, priority=1
+start=1612, duration=1, priority=0
+start=1617, duration=2, priority=1
+start=1673, duration=1, priority=0
+start=1679, duration=2, priority=1
+start=1731, duration=1, priority=0
+start=1738, duration=2, priority=1
+start=1791, duration=1, priority=0
+start=1796, duration=2, priority=1
+start=1849, duration=1, priority=0
+start=1854, duration=2, priority=1
+start=1907, duration=1, priority=0
+start=1911, duration=2, priority=1
+start=1963, duration=1, priority=0
+start=1969, duration=2, priority=1
+start=2021, duration=1, priority=0
+start=2027, duration=2, priority=1
+start=2079, duration=1, priority=0
+start=2086, duration=2, priority=1
+start=2139, duration=1, priority=0
+start=2144, duration=2, priority=1
+start=2197, duration=1, priority=0
+start=2202, duration=2, priority=1
+start=2255, duration=1, priority=0
+start=2259, duration=2, priority=1
+start=2313, duration=1, priority=0
+start=2317, duration=2, priority=1
+start=2373, duration=1, priority=0
+start=2375, duration=2, priority=1
+start=2426, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 6
+wait time = 0
+ticks = {1, 2, 8}
+times = {31, 31, 5}
+*******************
+start=424, duration=1, priority=0
+start=431, duration=2, priority=1
+start=476, duration=8, priority=2
+start=530, duration=8, priority=2
+start=585, duration=8, priority=2
+start=643, duration=1, priority=0
+start=644, duration=2, priority=1
+start=697, duration=1, priority=0
+start=702, duration=2, priority=1
+start=755, duration=1, priority=0
+start=761, duration=2, priority=1
+start=813, duration=1, priority=0
+start=820, duration=2, priority=1
+start=873, duration=1, priority=0
+start=878, duration=2, priority=1
+start=931, duration=1, priority=0
+start=936, duration=2, priority=1
+start=989, duration=1, priority=0
+start=993, duration=2, priority=1
+start=1045, duration=1, priority=0
+start=1051, duration=2, priority=1
+start=1103, duration=1, priority=0
+start=1109, duration=2, priority=1
+start=1161, duration=1, priority=0
+start=1168, duration=2, priority=1
+start=1221, duration=1, priority=0
+start=1226, duration=2, priority=1
+start=1279, duration=1, priority=0
+start=1284, duration=2, priority=1
+start=1337, duration=1, priority=0
+start=1341, duration=2, priority=1
+start=1395, duration=1, priority=0
+start=1399, duration=2, priority=1
+start=1455, duration=1, priority=0
+start=1457, duration=2, priority=1
+start=1508, duration=8, priority=2
+start=1561, duration=8, priority=2
+start=1619, duration=1, priority=0
+start=1620, duration=2, priority=1
+start=1676, duration=1, priority=0
+start=1681, duration=2, priority=1
+start=1734, duration=1, priority=0
+start=1740, duration=2, priority=1
+start=1792, duration=1, priority=0
+start=1799, duration=2, priority=1
+start=1852, duration=1, priority=0
+start=1857, duration=2, priority=1
+start=1910, duration=1, priority=0
+start=1915, duration=2, priority=1
+start=1968, duration=1, priority=0
+start=1972, duration=2, priority=1
+start=2024, duration=1, priority=0
+start=2030, duration=2, priority=1
+start=2082, duration=1, priority=0
+start=2088, duration=2, priority=1
+start=2140, duration=1, priority=0
+start=2147, duration=2, priority=1
+start=2200, duration=1, priority=0
+start=2205, duration=2, priority=1
+start=2258, duration=1, priority=0
+start=2263, duration=2, priority=1
+start=2316, duration=1, priority=0
+start=2320, duration=2, priority=1
+start=2374, duration=1, priority=0
+start=2378, duration=2, priority=1
+start=2434, duration=1, priority=0
+start=2436, duration=2, priority=1
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 8
+wait time = 0
+ticks = {1, 2, 8}
+times = {32, 32, 5}
+*******************
+start=426, duration=1, priority=0
+start=435, duration=2, priority=1
+start=492, duration=1, priority=0
+start=493, duration=2, priority=1
+start=546, duration=1, priority=0
+start=547, duration=2, priority=1
+start=601, duration=1, priority=0
+start=603, duration=2, priority=1
+start=654, duration=8, priority=2
+start=707, duration=8, priority=2
+start=765, duration=1, priority=0
+start=766, duration=2, priority=1
+start=819, duration=1, priority=0
+start=824, duration=2, priority=1
+start=877, duration=1, priority=0
+start=883, duration=2, priority=1
+start=935, duration=1, priority=0
+start=942, duration=2, priority=1
+start=995, duration=1, priority=0
+start=1000, duration=2, priority=1
+start=1053, duration=1, priority=0
+start=1058, duration=2, priority=1
+start=1111, duration=1, priority=0
+start=1115, duration=2, priority=1
+start=1167, duration=1, priority=0
+start=1173, duration=2, priority=1
+start=1225, duration=1, priority=0
+start=1231, duration=2, priority=1
+start=1283, duration=1, priority=0
+start=1290, duration=2, priority=1
+start=1343, duration=1, priority=0
+start=1348, duration=2, priority=1
+start=1401, duration=1, priority=0
+start=1406, duration=2, priority=1
+start=1459, duration=1, priority=0
+start=1463, duration=2, priority=1
+start=1517, duration=1, priority=0
+start=1521, duration=2, priority=1
+start=1577, duration=1, priority=0
+start=1579, duration=2, priority=1
+start=1630, duration=8, priority=2
+start=1686, duration=8, priority=2
+start=1744, duration=1, priority=0
+start=1745, duration=2, priority=1
+start=1798, duration=1, priority=0
+start=1803, duration=2, priority=1
+start=1856, duration=1, priority=0
+start=1862, duration=2, priority=1
+start=1914, duration=1, priority=0
+start=1921, duration=2, priority=1
+start=1974, duration=1, priority=0
+start=1979, duration=2, priority=1
+start=2032, duration=1, priority=0
+start=2037, duration=2, priority=1
+start=2090, duration=1, priority=0
+start=2094, duration=2, priority=1
+start=2146, duration=1, priority=0
+start=2152, duration=2, priority=1
+start=2204, duration=1, priority=0
+start=2210, duration=2, priority=1
+start=2262, duration=1, priority=0
+start=2269, duration=2, priority=1
+start=2322, duration=1, priority=0
+start=2327, duration=2, priority=1
+start=2380, duration=1, priority=0
+start=2385, duration=2, priority=1
+start=2438, duration=1, priority=0
+start=2441, duration=2, priority=1
+start=2488, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 10
+wait time = 0
+ticks = {1, 2, 8}
+times = {32, 32, 5}
+*******************
+start=446, duration=1, priority=0
+start=452, duration=2, priority=1
+start=505, duration=1, priority=0
+start=511, duration=2, priority=1
+start=563, duration=1, priority=0
+start=571, duration=2, priority=1
+start=623, duration=1, priority=0
+start=627, duration=2, priority=1
+start=679, duration=1, priority=0
+start=685, duration=2, priority=1
+start=737, duration=1, priority=0
+start=743, duration=2, priority=1
+start=795, duration=1, priority=0
+start=802, duration=2, priority=1
+start=855, duration=1, priority=0
+start=860, duration=2, priority=1
+start=913, duration=1, priority=0
+start=918, duration=2, priority=1
+start=971, duration=1, priority=0
+start=975, duration=2, priority=1
+start=1029, duration=1, priority=0
+start=1033, duration=2, priority=1
+start=1089, duration=1, priority=0
+start=1091, duration=2, priority=1
+start=1142, duration=8, priority=2
+start=1195, duration=8, priority=2
+start=1253, duration=1, priority=0
+start=1254, duration=2, priority=1
+start=1307, duration=1, priority=0
+start=1312, duration=2, priority=1
+start=1365, duration=1, priority=0
+start=1371, duration=2, priority=1
+start=1423, duration=1, priority=0
+start=1430, duration=2, priority=1
+start=1483, duration=1, priority=0
+start=1488, duration=2, priority=1
+start=1541, duration=1, priority=0
+start=1546, duration=2, priority=1
+start=1599, duration=1, priority=0
+start=1603, duration=2, priority=1
+start=1656, duration=1, priority=0
+start=1662, duration=2, priority=1
+start=1716, duration=1, priority=0
+start=1722, duration=2, priority=1
+start=1774, duration=1, priority=0
+start=1781, duration=2, priority=1
+start=1834, duration=1, priority=0
+start=1839, duration=2, priority=1
+start=1892, duration=1, priority=0
+start=1897, duration=2, priority=1
+start=1950, duration=1, priority=0
+start=1954, duration=2, priority=1
+start=2008, duration=1, priority=0
+start=2012, duration=2, priority=1
+start=2068, duration=1, priority=0
+start=2070, duration=2, priority=1
+start=2121, duration=8, priority=2
+start=2174, duration=8, priority=2
+start=2232, duration=1, priority=0
+start=2233, duration=2, priority=1
+start=2286, duration=1, priority=0
+start=2291, duration=2, priority=1
+start=2344, duration=1, priority=0
+start=2350, duration=2, priority=1
+start=2402, duration=1, priority=0
+start=2409, duration=2, priority=1
+start=2461, duration=1, priority=0
+start=2466, duration=2, priority=1
+start=2517, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 11
+wait time = 0
+ticks = {1, 2, 8}
+times = {33, 33, 4}
+*******************
+start=447, duration=1, priority=0
+start=454, duration=2, priority=1
+start=506, duration=1, priority=0
+start=513, duration=2, priority=1
+start=566, duration=1, priority=0
+start=574, duration=2, priority=1
+start=626, duration=1, priority=0
+start=631, duration=2, priority=1
+start=684, duration=1, priority=0
+start=688, duration=2, priority=1
+start=740, duration=1, priority=0
+start=746, duration=2, priority=1
+start=798, duration=1, priority=0
+start=804, duration=2, priority=1
+start=856, duration=1, priority=0
+start=863, duration=2, priority=1
+start=916, duration=1, priority=0
+start=921, duration=2, priority=1
+start=974, duration=1, priority=0
+start=979, duration=2, priority=1
+start=1032, duration=1, priority=0
+start=1036, duration=2, priority=1
+start=1090, duration=1, priority=0
+start=1094, duration=2, priority=1
+start=1150, duration=1, priority=0
+start=1152, duration=2, priority=1
+start=1203, duration=8, priority=2
+start=1256, duration=8, priority=2
+start=1314, duration=1, priority=0
+start=1315, duration=2, priority=1
+start=1368, duration=1, priority=0
+start=1373, duration=2, priority=1
+start=1426, duration=1, priority=0
+start=1432, duration=2, priority=1
+start=1484, duration=1, priority=0
+start=1491, duration=2, priority=1
+start=1544, duration=1, priority=0
+start=1549, duration=2, priority=1
+start=1602, duration=1, priority=0
+start=1607, duration=2, priority=1
+start=1661, duration=1, priority=0
+start=1665, duration=2, priority=1
+start=1719, duration=1, priority=0
+start=1725, duration=2, priority=1
+start=1777, duration=1, priority=0
+start=1783, duration=2, priority=1
+start=1835, duration=1, priority=0
+start=1842, duration=2, priority=1
+start=1895, duration=1, priority=0
+start=1900, duration=2, priority=1
+start=1953, duration=1, priority=0
+start=1958, duration=2, priority=1
+start=2011, duration=1, priority=0
+start=2015, duration=2, priority=1
+start=2069, duration=1, priority=0
+start=2073, duration=2, priority=1
+start=2129, duration=1, priority=0
+start=2131, duration=2, priority=1
+start=2182, duration=8, priority=2
+start=2235, duration=8, priority=2
+start=2293, duration=1, priority=0
+start=2294, duration=2, priority=1
+start=2347, duration=1, priority=0
+start=2352, duration=2, priority=1
+start=2405, duration=1, priority=0
+start=2411, duration=2, priority=1
+start=2464, duration=1, priority=0
+start=2469, duration=2, priority=1
+start=2525, duration=1, priority=0
+start=2528, duration=2, priority=1
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 12
+wait time = 0
+ticks = {1, 2, 8}
+times = {33, 33, 5}
+*******************
+start=448, duration=1, priority=0
+start=456, duration=2, priority=1
+start=509, duration=1, priority=0
+start=515, duration=2, priority=1
+start=567, duration=1, priority=0
+start=576, duration=2, priority=1
+start=629, duration=1, priority=0
+start=634, duration=2, priority=1
+start=687, duration=1, priority=0
+start=692, duration=2, priority=1
+start=745, duration=1, priority=0
+start=749, duration=2, priority=1
+start=801, duration=1, priority=0
+start=807, duration=2, priority=1
+start=859, duration=1, priority=0
+start=865, duration=2, priority=1
+start=917, duration=1, priority=0
+start=924, duration=2, priority=1
+start=977, duration=1, priority=0
+start=982, duration=2, priority=1
+start=1035, duration=1, priority=0
+start=1040, duration=2, priority=1
+start=1093, duration=1, priority=0
+start=1097, duration=2, priority=1
+start=1151, duration=1, priority=0
+start=1155, duration=2, priority=1
+start=1211, duration=1, priority=0
+start=1213, duration=2, priority=1
+start=1264, duration=8, priority=2
+start=1317, duration=8, priority=2
+start=1375, duration=1, priority=0
+start=1376, duration=2, priority=1
+start=1429, duration=1, priority=0
+start=1434, duration=2, priority=1
+start=1487, duration=1, priority=0
+start=1493, duration=2, priority=1
+start=1545, duration=1, priority=0
+start=1552, duration=2, priority=1
+start=1605, duration=1, priority=0
+start=1610, duration=2, priority=1
+start=1664, duration=1, priority=0
+start=1671, duration=2, priority=1
+start=1724, duration=1, priority=0
+start=1728, duration=2, priority=1
+start=1780, duration=1, priority=0
+start=1786, duration=2, priority=1
+start=1838, duration=1, priority=0
+start=1844, duration=2, priority=1
+start=1896, duration=1, priority=0
+start=1903, duration=2, priority=1
+start=1956, duration=1, priority=0
+start=1961, duration=2, priority=1
+start=2014, duration=1, priority=0
+start=2019, duration=2, priority=1
+start=2072, duration=1, priority=0
+start=2076, duration=2, priority=1
+start=2130, duration=1, priority=0
+start=2134, duration=2, priority=1
+start=2190, duration=1, priority=0
+start=2192, duration=2, priority=1
+start=2243, duration=8, priority=2
+start=2296, duration=8, priority=2
+start=2354, duration=1, priority=0
+start=2355, duration=2, priority=1
+start=2408, duration=1, priority=0
+start=2413, duration=2, priority=1
+start=2465, duration=1, priority=0
+start=2471, duration=2, priority=1
+start=2526, duration=1, priority=0
+start=2530, duration=2, priority=1
+start=2579, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 13
+wait time = 0
+ticks = {1, 2, 8}
+times = {34, 34, 4}
+*******************
+start=449, duration=1, priority=0
+start=458, duration=2, priority=1
+start=510, duration=1, priority=0
+start=517, duration=2, priority=1
+start=570, duration=1, priority=0
+start=578, duration=2, priority=1
+start=630, duration=1, priority=0
+start=637, duration=2, priority=1
+start=690, duration=1, priority=0
+start=695, duration=2, priority=1
+start=748, duration=1, priority=0
+start=753, duration=2, priority=1
+start=806, duration=1, priority=0
+start=810, duration=2, priority=1
+start=862, duration=1, priority=0
+start=868, duration=2, priority=1
+start=920, duration=1, priority=0
+start=926, duration=2, priority=1
+start=978, duration=1, priority=0
+start=985, duration=2, priority=1
+start=1038, duration=1, priority=0
+start=1043, duration=2, priority=1
+start=1096, duration=1, priority=0
+start=1101, duration=2, priority=1
+start=1154, duration=1, priority=0
+start=1158, duration=2, priority=1
+start=1212, duration=1, priority=0
+start=1216, duration=2, priority=1
+start=1272, duration=1, priority=0
+start=1274, duration=2, priority=1
+start=1325, duration=8, priority=2
+start=1378, duration=8, priority=2
+start=1436, duration=1, priority=0
+start=1437, duration=2, priority=1
+start=1490, duration=1, priority=0
+start=1495, duration=2, priority=1
+start=1548, duration=1, priority=0
+start=1554, duration=2, priority=1
+start=1606, duration=1, priority=0
+start=1613, duration=2, priority=1
+start=1667, duration=1, priority=0
+start=1674, duration=2, priority=1
+start=1727, duration=1, priority=0
+start=1732, duration=2, priority=1
+start=1785, duration=1, priority=0
+start=1789, duration=2, priority=1
+start=1841, duration=1, priority=0
+start=1847, duration=2, priority=1
+start=1899, duration=1, priority=0
+start=1905, duration=2, priority=1
+start=1957, duration=1, priority=0
+start=1964, duration=2, priority=1
+start=2017, duration=1, priority=0
+start=2022, duration=2, priority=1
+start=2075, duration=1, priority=0
+start=2080, duration=2, priority=1
+start=2133, duration=1, priority=0
+start=2137, duration=2, priority=1
+start=2191, duration=1, priority=0
+start=2195, duration=2, priority=1
+start=2251, duration=1, priority=0
+start=2253, duration=2, priority=1
+start=2304, duration=8, priority=2
+start=2357, duration=8, priority=2
+start=2415, duration=1, priority=0
+start=2416, duration=2, priority=1
+start=2468, duration=1, priority=0
+start=2473, duration=2, priority=1
+start=2527, duration=1, priority=0
+start=2532, duration=2, priority=1
+start=2587, duration=1, priority=0
+start=2588, duration=2, priority=1
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 3
+wait time = 0
+ticks = {1, 2, 8}
+times = {33, 39, 8}
+*******************
+start=408, duration=1, priority=0
+start=409, duration=1, priority=1
+start=410, duration=1, priority=1
+start=412, duration=0, priority=1
+start=412, duration=0, priority=1
+start=412, duration=0, priority=1
+start=412, duration=0, priority=1
+start=412, duration=2, priority=1
+start=414, duration=8, priority=2
+start=437, duration=8, priority=2
+start=495, duration=1, priority=0
+start=496, duration=2, priority=1
+start=549, duration=1, priority=0
+start=550, duration=2, priority=1
+start=602, duration=1, priority=0
+start=605, duration=2, priority=1
+start=662, duration=1, priority=0
+start=665, duration=2, priority=1
+start=715, duration=8, priority=2
+start=768, duration=8, priority=2
+start=826, duration=1, priority=0
+start=827, duration=2, priority=1
+start=880, duration=1, priority=0
+start=885, duration=2, priority=1
+start=938, duration=1, priority=0
+start=944, duration=2, priority=1
+start=996, duration=1, priority=0
+start=1003, duration=2, priority=1
+start=1056, duration=1, priority=0
+start=1061, duration=2, priority=1
+start=1114, duration=1, priority=0
+start=1119, duration=2, priority=1
+start=1172, duration=1, priority=0
+start=1176, duration=2, priority=1
+start=1228, duration=1, priority=0
+start=1234, duration=2, priority=1
+start=1286, duration=1, priority=0
+start=1292, duration=2, priority=1
+start=1344, duration=1, priority=0
+start=1351, duration=2, priority=1
+start=1404, duration=1, priority=0
+start=1409, duration=2, priority=1
+start=1462, duration=1, priority=0
+start=1467, duration=2, priority=1
+start=1520, duration=1, priority=0
+start=1524, duration=2, priority=1
+start=1578, duration=1, priority=0
+start=1582, duration=2, priority=1
+start=1638, duration=1, priority=0
+start=1640, duration=2, priority=1
+start=1694, duration=8, priority=2
+start=1747, duration=8, priority=2
+start=1805, duration=1, priority=0
+start=1806, duration=2, priority=1
+start=1859, duration=1, priority=0
+start=1864, duration=2, priority=1
+start=1917, duration=1, priority=0
+start=1923, duration=2, priority=1
+start=1975, duration=1, priority=0
+start=1982, duration=2, priority=1
+start=2035, duration=1, priority=0
+start=2040, duration=2, priority=1
+start=2093, duration=1, priority=0
+start=2098, duration=2, priority=1
+start=2151, duration=1, priority=0
+start=2155, duration=2, priority=1
+start=2207, duration=1, priority=0
+start=2213, duration=2, priority=1
+start=2265, duration=1, priority=0
+start=2271, duration=2, priority=1
+start=2323, duration=1, priority=0
+start=2330, duration=2, priority=1
+start=2383, duration=1, priority=0
+start=2388, duration=2, priority=1
+start=2440, duration=1, priority=0
+start=2444, duration=2, priority=1
+start=2496, duration=1, priority=0
+start=2497, duration=2, priority=1
+start=2539, duration=8, priority=2
+start=2590, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 18
+wait time = 0
+ticks = {1, 2, 8}
+times = {30, 30, 6}
+*******************
+start=607, duration=1, priority=0
+start=609, duration=2, priority=1
+start=663, duration=1, priority=0
+start=668, duration=2, priority=1
+start=723, duration=1, priority=0
+start=725, duration=2, priority=1
+start=776, duration=8, priority=2
+start=829, duration=8, priority=2
+start=887, duration=1, priority=0
+start=888, duration=2, priority=1
+start=941, duration=1, priority=0
+start=946, duration=2, priority=1
+start=999, duration=1, priority=0
+start=1005, duration=2, priority=1
+start=1057, duration=1, priority=0
+start=1064, duration=2, priority=1
+start=1117, duration=1, priority=0
+start=1122, duration=2, priority=1
+start=1175, duration=1, priority=0
+start=1180, duration=2, priority=1
+start=1233, duration=1, priority=0
+start=1237, duration=2, priority=1
+start=1289, duration=1, priority=0
+start=1295, duration=2, priority=1
+start=1347, duration=1, priority=0
+start=1353, duration=2, priority=1
+start=1405, duration=1, priority=0
+start=1412, duration=2, priority=1
+start=1465, duration=1, priority=0
+start=1470, duration=2, priority=1
+start=1523, duration=1, priority=0
+start=1528, duration=2, priority=1
+start=1581, duration=1, priority=0
+start=1585, duration=2, priority=1
+start=1639, duration=1, priority=0
+start=1643, duration=2, priority=1
+start=1702, duration=1, priority=0
+start=1704, duration=2, priority=1
+start=1755, duration=8, priority=2
+start=1808, duration=8, priority=2
+start=1866, duration=1, priority=0
+start=1867, duration=2, priority=1
+start=1920, duration=1, priority=0
+start=1925, duration=2, priority=1
+start=1978, duration=1, priority=0
+start=1984, duration=2, priority=1
+start=2036, duration=1, priority=0
+start=2043, duration=2, priority=1
+start=2096, duration=1, priority=0
+start=2101, duration=2, priority=1
+start=2154, duration=1, priority=0
+start=2159, duration=2, priority=1
+start=2212, duration=1, priority=0
+start=2216, duration=2, priority=1
+start=2268, duration=1, priority=0
+start=2274, duration=2, priority=1
+start=2326, duration=1, priority=0
+start=2332, duration=2, priority=1
+start=2384, duration=1, priority=0
+start=2391, duration=2, priority=1
+start=2443, duration=1, priority=0
+start=2447, duration=2, priority=1
+start=2499, duration=1, priority=0
+start=2500, duration=2, priority=1
+start=2547, duration=8, priority=2
+start=2598, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 16
+wait time = 0
+ticks = {1, 2, 8}
+times = {32, 32, 5}
+*******************
+start=552, duration=1, priority=0
+start=556, duration=2, priority=1
+start=608, duration=1, priority=0
+start=612, duration=2, priority=1
+start=664, duration=1, priority=0
+start=671, duration=2, priority=1
+start=724, duration=1, priority=0
+start=728, duration=2, priority=1
+start=784, duration=1, priority=0
+start=786, duration=2, priority=1
+start=837, duration=8, priority=2
+start=890, duration=8, priority=2
+start=948, duration=1, priority=0
+start=949, duration=2, priority=1
+start=1002, duration=1, priority=0
+start=1007, duration=2, priority=1
+start=1060, duration=1, priority=0
+start=1066, duration=2, priority=1
+start=1118, duration=1, priority=0
+start=1125, duration=2, priority=1
+start=1178, duration=1, priority=0
+start=1183, duration=2, priority=1
+start=1236, duration=1, priority=0
+start=1241, duration=2, priority=1
+start=1294, duration=1, priority=0
+start=1298, duration=2, priority=1
+start=1350, duration=1, priority=0
+start=1356, duration=2, priority=1
+start=1408, duration=1, priority=0
+start=1414, duration=2, priority=1
+start=1466, duration=1, priority=0
+start=1473, duration=2, priority=1
+start=1526, duration=1, priority=0
+start=1531, duration=2, priority=1
+start=1584, duration=1, priority=0
+start=1589, duration=2, priority=1
+start=1642, duration=1, priority=0
+start=1647, duration=2, priority=1
+start=1703, duration=1, priority=0
+start=1707, duration=2, priority=1
+start=1763, duration=1, priority=0
+start=1765, duration=2, priority=1
+start=1816, duration=8, priority=2
+start=1869, duration=8, priority=2
+start=1927, duration=1, priority=0
+start=1928, duration=2, priority=1
+start=1981, duration=1, priority=0
+start=1986, duration=2, priority=1
+start=2039, duration=1, priority=0
+start=2045, duration=2, priority=1
+start=2097, duration=1, priority=0
+start=2104, duration=2, priority=1
+start=2157, duration=1, priority=0
+start=2162, duration=2, priority=1
+start=2215, duration=1, priority=0
+start=2220, duration=2, priority=1
+start=2273, duration=1, priority=0
+start=2277, duration=2, priority=1
+start=2329, duration=1, priority=0
+start=2335, duration=2, priority=1
+start=2387, duration=1, priority=0
+start=2393, duration=2, priority=1
+start=2446, duration=1, priority=0
+start=2450, duration=2, priority=1
+start=2502, duration=1, priority=0
+start=2503, duration=2, priority=1
+start=2555, duration=1, priority=0
+start=2556, duration=2, priority=1
+start=2606, duration=8, priority=2
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 17
+wait time = 0
+ticks = {1, 2, 8}
+times = {33, 33, 4}
+*******************
+start=553, duration=1, priority=0
+start=558, duration=2, priority=1
+start=611, duration=1, priority=0
+start=615, duration=2, priority=1
+start=667, duration=1, priority=0
+start=674, duration=2, priority=1
+start=727, duration=1, priority=0
+start=731, duration=2, priority=1
+start=785, duration=1, priority=0
+start=789, duration=2, priority=1
+start=845, duration=1, priority=0
+start=847, duration=2, priority=1
+start=898, duration=8, priority=2
+start=951, duration=8, priority=2
+start=1009, duration=1, priority=0
+start=1010, duration=2, priority=1
+start=1063, duration=1, priority=0
+start=1068, duration=2, priority=1
+start=1121, duration=1, priority=0
+start=1127, duration=2, priority=1
+start=1179, duration=1, priority=0
+start=1186, duration=2, priority=1
+start=1239, duration=1, priority=0
+start=1244, duration=2, priority=1
+start=1297, duration=1, priority=0
+start=1302, duration=2, priority=1
+start=1355, duration=1, priority=0
+start=1359, duration=2, priority=1
+start=1411, duration=1, priority=0
+start=1417, duration=2, priority=1
+start=1469, duration=1, priority=0
+start=1475, duration=2, priority=1
+start=1527, duration=1, priority=0
+start=1534, duration=2, priority=1
+start=1587, duration=1, priority=0
+start=1592, duration=2, priority=1
+start=1645, duration=1, priority=0
+start=1651, duration=2, priority=1
+start=1706, duration=1, priority=0
+start=1710, duration=2, priority=1
+start=1764, duration=1, priority=0
+start=1768, duration=2, priority=1
+start=1824, duration=1, priority=0
+start=1826, duration=2, priority=1
+start=1877, duration=8, priority=2
+start=1930, duration=8, priority=2
+start=1988, duration=1, priority=0
+start=1989, duration=2, priority=1
+start=2042, duration=1, priority=0
+start=2047, duration=2, priority=1
+start=2100, duration=1, priority=0
+start=2106, duration=2, priority=1
+start=2158, duration=1, priority=0
+start=2165, duration=2, priority=1
+start=2218, duration=1, priority=0
+start=2223, duration=2, priority=1
+start=2276, duration=1, priority=0
+start=2281, duration=2, priority=1
+start=2334, duration=1, priority=0
+start=2338, duration=2, priority=1
+start=2390, duration=1, priority=0
+start=2396, duration=2, priority=1
+start=2449, duration=1, priority=0
+start=2453, duration=2, priority=1
+start=2505, duration=1, priority=0
+start=2506, duration=2, priority=1
+start=2558, duration=1, priority=0
+start=2559, duration=2, priority=1
+start=2614, duration=1, priority=0
+start=2616, duration=2, priority=1
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 14
+wait time = 0
+ticks = {1, 2, 8}
+times = {34, 34, 4}
+*******************
+start=498, duration=1, priority=0
+start=500, duration=2, priority=1
+start=554, duration=1, priority=0
+start=561, duration=2, priority=1
+start=614, duration=1, priority=0
+start=618, duration=2, priority=1
+start=670, duration=1, priority=0
+start=677, duration=2, priority=1
+start=730, duration=1, priority=0
+start=735, duration=2, priority=1
+start=788, duration=1, priority=0
+start=792, duration=2, priority=1
+start=846, duration=1, priority=0
+start=850, duration=2, priority=1
+start=906, duration=1, priority=0
+start=908, duration=2, priority=1
+start=959, duration=8, priority=2
+start=1012, duration=8, priority=2
+start=1070, duration=1, priority=0
+start=1071, duration=2, priority=1
+start=1124, duration=1, priority=0
+start=1129, duration=2, priority=1
+start=1182, duration=1, priority=0
+start=1188, duration=2, priority=1
+start=1240, duration=1, priority=0
+start=1247, duration=2, priority=1
+start=1300, duration=1, priority=0
+start=1305, duration=2, priority=1
+start=1358, duration=1, priority=0
+start=1363, duration=2, priority=1
+start=1416, duration=1, priority=0
+start=1420, duration=2, priority=1
+start=1472, duration=1, priority=0
+start=1478, duration=2, priority=1
+start=1530, duration=1, priority=0
+start=1536, duration=2, priority=1
+start=1588, duration=1, priority=0
+start=1595, duration=2, priority=1
+start=1649, duration=1, priority=0
+start=1654, duration=2, priority=1
+start=1709, duration=1, priority=0
+start=1714, duration=2, priority=1
+start=1767, duration=1, priority=0
+start=1771, duration=2, priority=1
+start=1825, duration=1, priority=0
+start=1829, duration=2, priority=1
+start=1885, duration=1, priority=0
+start=1887, duration=2, priority=1
+start=1938, duration=8, priority=2
+start=1991, duration=8, priority=2
+start=2049, duration=1, priority=0
+start=2050, duration=2, priority=1
+start=2103, duration=1, priority=0
+start=2108, duration=2, priority=1
+start=2161, duration=1, priority=0
+start=2167, duration=2, priority=1
+start=2219, duration=1, priority=0
+start=2226, duration=2, priority=1
+start=2279, duration=1, priority=0
+start=2284, duration=2, priority=1
+start=2337, duration=1, priority=0
+start=2342, duration=2, priority=1
+start=2395, duration=1, priority=0
+start=2399, duration=2, priority=1
+start=2452, duration=1, priority=0
+start=2456, duration=2, priority=1
+start=2508, duration=1, priority=0
+start=2509, duration=2, priority=1
+start=2561, duration=1, priority=0
+start=2562, duration=2, priority=1
+start=2615, duration=1, priority=0
+start=2619, duration=2, priority=1
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 15
+wait time = 0
+ticks = {1, 2, 8}
+times = {34, 34, 4}
+*******************
+start=499, duration=1, priority=0
+start=503, duration=2, priority=1
+start=555, duration=1, priority=0
+start=564, duration=2, priority=1
+start=617, duration=1, priority=0
+start=621, duration=2, priority=1
+start=673, duration=1, priority=0
+start=680, duration=2, priority=1
+start=733, duration=1, priority=0
+start=738, duration=2, priority=1
+start=791, duration=1, priority=0
+start=796, duration=2, priority=1
+start=849, duration=1, priority=0
+start=853, duration=2, priority=1
+start=907, duration=1, priority=0
+start=911, duration=2, priority=1
+start=967, duration=1, priority=0
+start=969, duration=2, priority=1
+start=1020, duration=8, priority=2
+start=1073, duration=8, priority=2
+start=1131, duration=1, priority=0
+start=1132, duration=2, priority=1
+start=1185, duration=1, priority=0
+start=1190, duration=2, priority=1
+start=1243, duration=1, priority=0
+start=1249, duration=2, priority=1
+start=1301, duration=1, priority=0
+start=1308, duration=2, priority=1
+start=1361, duration=1, priority=0
+start=1366, duration=2, priority=1
+start=1419, duration=1, priority=0
+start=1424, duration=2, priority=1
+start=1477, duration=1, priority=0
+start=1481, duration=2, priority=1
+start=1533, duration=1, priority=0
+start=1539, duration=2, priority=1
+start=1591, duration=1, priority=0
+start=1597, duration=2, priority=1
+start=1650, duration=1, priority=0
+start=1657, duration=2, priority=1
+start=1712, duration=1, priority=0
+start=1717, duration=2, priority=1
+start=1770, duration=1, priority=0
+start=1775, duration=2, priority=1
+start=1828, duration=1, priority=0
+start=1832, duration=2, priority=1
+start=1886, duration=1, priority=0
+start=1890, duration=2, priority=1
+start=1946, duration=1, priority=0
+start=1948, duration=2, priority=1
+start=1999, duration=8, priority=2
+start=2052, duration=8, priority=2
+start=2110, duration=1, priority=0
+start=2111, duration=2, priority=1
+start=2164, duration=1, priority=0
+start=2169, duration=2, priority=1
+start=2222, duration=1, priority=0
+start=2228, duration=2, priority=1
+start=2280, duration=1, priority=0
+start=2287, duration=2, priority=1
+start=2340, duration=1, priority=0
+start=2345, duration=2, priority=1
+start=2398, duration=1, priority=0
+start=2403, duration=2, priority=1
+start=2455, duration=1, priority=0
+start=2459, duration=2, priority=1
+start=2511, duration=1, priority=0
+start=2512, duration=2, priority=1
+start=2564, duration=1, priority=0
+start=2565, duration=2, priority=1
+start=2618, duration=1, priority=0
+start=2622, duration=2, priority=1
+PSTAT_END
+PSTAT_START
+**********************
+name = test2, pid = 9
+wait time = 0
+ticks = {1, 2, 8}
+times = {35, 35, 11}
+*******************
+start=445, duration=1, priority=0
+start=450, duration=2, priority=1
+start=502, duration=1, priority=0
+start=507, duration=2, priority=1
+start=560, duration=1, priority=0
+start=568, duration=2, priority=1
+start=620, duration=1, priority=0
+start=624, duration=2, priority=1
+start=676, duration=1, priority=0
+start=682, duration=2, priority=1
+start=734, duration=1, priority=0
+start=741, duration=2, priority=1
+start=794, duration=1, priority=0
+start=799, duration=2, priority=1
+start=852, duration=1, priority=0
+start=857, duration=2, priority=1
+start=910, duration=1, priority=0
+start=914, duration=2, priority=1
+start=968, duration=1, priority=0
+start=972, duration=2, priority=1
+start=1028, duration=1, priority=0
+start=1030, duration=2, priority=1
+start=1081, duration=8, priority=2
+start=1134, duration=8, priority=2
+start=1192, duration=1, priority=0
+start=1193, duration=2, priority=1
+start=1246, duration=1, priority=0
+start=1251, duration=2, priority=1
+start=1304, duration=1, priority=0
+start=1310, duration=2, priority=1
+start=1362, duration=1, priority=0
+start=1369, duration=2, priority=1
+start=1422, duration=1, priority=0
+start=1427, duration=2, priority=1
+start=1480, duration=1, priority=0
+start=1485, duration=2, priority=1
+start=1538, duration=1, priority=0
+start=1542, duration=2, priority=1
+start=1594, duration=1, priority=0
+start=1600, duration=2, priority=1
+start=1653, duration=1, priority=0
+start=1659, duration=2, priority=1
+start=1713, duration=1, priority=0
+start=1720, duration=2, priority=1
+start=1773, duration=1, priority=0
+start=1778, duration=2, priority=1
+start=1831, duration=1, priority=0
+start=1836, duration=2, priority=1
+start=1889, duration=1, priority=0
+start=1893, duration=2, priority=1
+start=1947, duration=1, priority=0
+start=1951, duration=2, priority=1
+start=2007, duration=1, priority=0
+start=2009, duration=2, priority=1
+start=2060, duration=8, priority=2
+start=2113, duration=8, priority=2
+start=2171, duration=1, priority=0
+start=2172, duration=2, priority=1
+start=2225, duration=1, priority=0
+start=2230, duration=2, priority=1
+start=2283, duration=1, priority=0
+start=2289, duration=2, priority=1
+start=2341, duration=1, priority=0
+start=2348, duration=2, priority=1
+start=2401, duration=1, priority=0
+start=2406, duration=2, priority=1
+start=2458, duration=1, priority=0
+start=2462, duration=2, priority=1
+start=2514, duration=1, priority=0
+start=2515, duration=2, priority=1
+start=2567, duration=1, priority=0
+start=2568, duration=2, priority=1
+start=2621, duration=1, priority=0
+start=2624, duration=2, priority=1
+start=2662, duration=8, priority=2
+start=2673, duration=8, priority=2
+start=2681, duration=8, priority=2
+start=2689, duration=8, priority=2
+start=2697, duration=8, priority=2
+start=2705, duration=8, priority=2
+start=2713, duration=8, priority=2
+PSTAT_END
+test2: done
