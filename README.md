@@ -27,5 +27,4 @@ Notes:
 
 - To exit out of the shell, press Ctrl-a and then x
 - To exit out of the docker environment, type exit in the Docker shell
-- ID's may differ between threads because they are created in a sequence
-- Test outputs included in the DESIGNDOC for reference
+- Test outputs included in the workload.pdf for reference
